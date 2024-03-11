@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+
+  margin: 0px;
+  padding: 1px;
+  box-sizing: content-box;
+}
+
+body {
+  /* display: grid; */
+  font-family: 'Roboto';
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+  text-align: left;
+}
+
+
+.header {
+  background-color: #D9D9D9;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  color: white;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0 30px;
+  border-radius: 30px;
+}
+
+.header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #3c3a3a;
+  margin: 0 100px;
+
+}
+
+.header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+
+.header h1 span {
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+}
+
+.header h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1em;
+  color: #000000;
+  margin-top: 10px;
+}
+
+/* CONTACT */
+
+.contact {
+  grid-column: 1;
+  background-color: #D9D9D9;
+  padding: 20px;
+  padding-right: 95px;
+  margin: 0 10px;
+  margin-right: 650px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact h2 {
+  color: #000000;
+  font-size: 1 .3em;
+}
+
+.contact p {
+  list-style-type: none;
+  padding: 5px;
+  margin: 2px;
+  /* Mengurangi nilai margin-left */
+  margin-left: 10px;
+  margin-bottom: 10px;
+  /* Menambahkan padding-left */
+  padding-left: 20px;
+  /* Mengubah atribut display */
+  display: inline-block;
+}
+
+/* HOBBY */
+
+.hobby {
+  grid-column: 1;
+  background-color: #D9D9D9;
+  padding: 25px;
+  margin: -80px 10px 10px;
+  margin-right: 650px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.hobby h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+.hobby ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap; /* Jika ingin item terbentang ke baris baru jika tidak cukup ruang */
+}
+
+.hobby li {
+  margin-right: 20px; /* Jarak antara item */
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.hobby li i {
+  margin-right: 5px; /* Jarak antara ikon dan teks */
+  font-size: 1.2em; /* Ukuran ikon */
+}
+
+/* Skills */
+.skills {
+  grid-column: 2;
+  background-color: #D9D9D9;
+  padding: 25px;
+  margin: 0 475px 550px -630px;
+  /* Mengubah margin agar lebih dekat dengan kolom contact */
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.skills h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 20px;
+  margin: 20px;
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  width: 100%; /* Lebar penuh */
+  background-color: #3c3a3a; /* Warna latar belakang */
+  height: 10px; /* Tinggi bar */
+  border-radius: 5px; /* Sudut bulat */
+  margin-top: 5px; /* Jarak atas */
+}
+
+.skill-level {
+  height: 100%; /* Tinggi penuh */
+  border-radius: 5px; /* Sudut bulat */
+}
+
+.high {
+  background-color: #5cbe54; /* Warna untuk tingkat penguasaan tinggi */
+  width: 80%; /* Persentase penguasaan */
+}
+
+.medium {
+  background-color:#fecb69; /* Warna untuk tingkat penguasaan sedang */
+  width: 50%; /* Persentase penguasaan */
+}
+
+.low {
+  background-color: #ba1f33; /* Warna untuk tingkat penguasaan rendah */
+  width: 30%; /* Persentase penguasaan */
+}
+
+
+/* experience */
+.experience {
+  grid-column: span 2; /* Mengubah nilai grid-column */
+  background-color: #D9D9D9;
+  padding: 25px;
+  margin: -520px 400px -200px; /* Menggunakan persentase untuk margin agar lebih fleksibel */
+  margin-right: 475px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.experience h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.experience ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.experience li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+}
